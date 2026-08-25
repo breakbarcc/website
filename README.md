@@ -29,8 +29,8 @@ npm run dev
 
 ## Struktur
 
-- `src/data/tools.ts` — Tool-Registry (Name, Beschreibung DE/EN, Link, `soon`-Flag). Neue Tools werden hier als Eintrag ergänzt.
-- `src/lib/i18n.tsx` — einfacher DE/EN-Kontext (Context + Dictionary), kein i18n-Framework nötig für zwei Sprachen.
+- `src/data/tools.ts` — Tool-Registry (Name, Link, `soon`-Flag). Neue Tools werden hier als Eintrag ergänzt; Übersetzungen für Beschreibung/Screenshot-Label kommen dazu unter `tools.<key>.desc`/`tools.<key>.shot` in die Locale-Dateien.
+- `src/locales/en/translation.json`, `src/locales/de/translation.json` — alle UI-Texte (i18next). Default-Sprache ist Englisch (`src/lib/i18n.ts`).
 - `src/components/` — Header, Hero, ToolGrid/ToolCard, Footer.
 
 ## Später

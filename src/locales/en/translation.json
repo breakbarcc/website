@@ -1,0 +1,26 @@
+{
+  "common": {
+    "kicker": "Guild Wars 2 · tools",
+    "heroTitle": "Small tools for people who want to know exactly.",
+    "heroText": "breakbar.cc collects the things that actually help while playing Guild Wars 2: calculators, log analysis, recipes, explanations. All free, no account required.",
+    "gridLabel": "All tools",
+    "soonLabel": "soon",
+    "openLabel": "open →",
+    "inProgressLabel": "in progress",
+    "footerLeft": "Not an official Guild Wars 2 offering. Fan project, built out of personal need."
+  },
+  "tools": {
+    "fractal": {
+      "desc": "Tells you how many days your current routine still needs until the \"Fractal God\" title.",
+      "shot": "Screenshot: calculator"
+    },
+    "legendary": {
+      "desc": "Every ingredient for your legendary in one place instead of five wiki tabs.",
+      "shot": "Screenshot: recipe tree"
+    },
+    "voidlog": {
+      "desc": "Upload your logs and see at a glance how far the group gets in an encounter and whether the trend is moving.",
+      "shot": "Screenshot: project overview"
+    }
+  }
+}

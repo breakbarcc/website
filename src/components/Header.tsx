@@ -1,9 +1,10 @@
-import { useLanguage } from "@/lib/i18n"
+import { useTranslation } from "react-i18next"
+
 import { cn } from "@/lib/utils"
 import { Wordmark } from "@/components/Wordmark"
 
 export function Header() {
-  const { lang, setLang } = useLanguage()
+  const { i18n } = useTranslation()
 
   const btnClass = (on: boolean) =>
     cn(
@@ -15,10 +16,16 @@ export function Header() {
     <header className="flex items-center justify-between gap-6 pt-7">
       <Wordmark />
       <div className="flex gap-0.5 p-[3px] border border-line rounded-full">
-        <button onClick={() => setLang("de")} className={btnClass(lang === "de")}>
+        <button
+          onClick={() => i18n.changeLanguage("de")}
+          className={btnClass(i18n.resolvedLanguage === "de")}
+        >
           DE
         </button>
-        <button onClick={() => setLang("en")} className={btnClass(lang === "en")}>
+        <button
+          onClick={() => i18n.changeLanguage("en")}
+          className={btnClass(i18n.resolvedLanguage === "en")}
+        >
           EN
         </button>
       </div>

@@ -1,0 +1,26 @@
+{
+  "common": {
+    "kicker": "Guild Wars 2 · Tools",
+    "heroTitle": "Kleine Tools für Leute, die es genau wissen wollen.",
+    "heroText": "breakbar.cc sammelt, was beim Spielen von Guild Wars 2 wirklich hilft: Rechner, Log-Auswertung, Rezepte, Erklärungen. Alles kostenlos, alles ohne Account-Zwang.",
+    "gridLabel": "Alle Tools",
+    "soonLabel": "bald",
+    "openLabel": "öffnen →",
+    "inProgressLabel": "in Arbeit",
+    "footerLeft": "Kein offizielles Guild-Wars-2-Angebot. Fanprojekt, gebaut aus Eigenbedarf."
+  },
+  "tools": {
+    "fractal": {
+      "desc": "Sagt dir, wie viele Tage du bei deiner aktuellen Routine noch bis zum Titel „Fractal God\" brauchst.",
+      "shot": "Screenshot: Rechner"
+    },
+    "legendary": {
+      "desc": "Alle Zutaten für dein Legendary an einem Ort, statt sich durch fünf Wiki-Tabs zu klicken.",
+      "shot": "Screenshot: Rezeptbaum"
+    },
+    "voidlog": {
+      "desc": "Ladet eure Logs hoch und seht auf einen Blick, wie weit die Gruppe im Encounter kommt und ob sich der Trend bewegt.",
+      "shot": "Screenshot: Projektübersicht"
+    }
+  }
+}
