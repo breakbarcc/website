@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next"
 import type { Tool } from "@/data/tools"
 import { cn } from "@/lib/utils"
 
-export function ToolCard({ tool }: { tool: Tool }) {
+export function ToolCard({ tool }: Readonly<{ tool: Tool }>) {
   const { t } = useTranslation()
 
   return (
@@ -15,10 +15,18 @@ export function ToolCard({ tool }: { tool: Tool }) {
         tool.soon && "opacity-60 pointer-events-none",
       )}
     >
-      <div className="relative aspect-[16/10] bg-base bg-[repeating-linear-gradient(135deg,#171b21_0_8px,#111418_8px_16px)] border-b border-line flex items-center justify-center">
-        <div className="font-mono text-[11px] tracking-[0.1em] uppercase text-text-faint/70">
-          {t(`tools.${tool.key}.shot`)}
-        </div>
+      <div className="relative aspect-[16/10] bg-base bg-[repeating-linear-gradient(135deg,#171b21_0_8px,#111418_8px_16px)] border-b border-line flex items-center justify-center overflow-hidden">
+        {tool.image ? (
+          <img
+            src={tool.image}
+            alt={tool.name}
+            className="w-full h-full object-cover"
+          />
+        ) : (
+          <div className="font-mono text-[11px] tracking-[0.1em] uppercase text-text-faint/70">
+            {t(`tools.${tool.key}.shot`)}
+          </div>
+        )}
         {tool.soon && (
           <div className="absolute top-3 right-3 font-mono text-[10px] tracking-[0.12em] uppercase text-warn border border-warn-line bg-warn-bg px-2 py-1 rounded">
             {t("common.soonLabel")}

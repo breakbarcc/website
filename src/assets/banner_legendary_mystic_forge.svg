@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&amp;display=swap');
+    </style>
+
+    <radialGradient id="bgGlow" cx="50%" cy="46%" r="65%">
+      <stop offset="0%" stop-color="#9349CC" stop-opacity="0.35"></stop>
+      <stop offset="55%" stop-color="#3a1d54" stop-opacity="0.18"></stop>
+      <stop offset="100%" stop-color="#0b0814" stop-opacity="1"></stop>
+    </radialGradient>
+
+    <linearGradient id="core" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b673e6"></stop>
+      <stop offset="100%" stop-color="#5a2a7e"></stop>
+    </linearGradient>
+
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f3ecfb"></stop>
+      <stop offset="100%" stop-color="#e8e4f0"></stop>
+    </linearGradient>
+
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="750" fill="#0b0814"></rect>
+  <rect width="1200" height="750" fill="url(#bgGlow)"></rect>
+
+  <!-- faint outer ring vignette pattern echoing the emblem -->
+  <g opacity="0.5">
+    <circle cx="600" cy="330" r="360" fill="none" stroke="#9349CC" stroke-width="1" opacity="0.25"></circle>
+    <circle cx="600" cy="330" r="300" fill="none" stroke="#9349CC" stroke-width="1" stroke-dasharray="3 5" opacity="0.2"></circle>
+  </g>
+
+  <!-- Emblem (scaled favicon motif) -->
+  <g transform="translate(600,255)">
+    <circle cx="0" cy="0" r="130" fill="none" stroke="#9349CC" stroke-width="1.4" opacity="0.7"></circle>
+    <circle cx="0" cy="0" r="100" fill="none" stroke="#9349CC" stroke-width="1.4" stroke-dasharray="4 6" opacity="0.6"></circle>
+    <circle cx="0" cy="0" r="65" fill="none" stroke="#e9c66b" stroke-width="1.4" opacity="0.8"></circle>
+
+    <g fill="#9349CC">
+      <circle cx="130" cy="0" r="6"></circle>
+      <circle cx="65" cy="112.6" r="6"></circle>
+      <circle cx="-65" cy="112.6" r="6"></circle>
+      <circle cx="-130" cy="0" r="6"></circle>
+      <circle cx="-65" cy="-112.6" r="6"></circle>
+      <circle cx="65" cy="-112.6" r="6"></circle>
+    </g>
+
+    <circle cx="0" cy="0" r="45" fill="url(#core)" filter="url(#softGlow)"></circle>
+    <text x="0" y="17" text-anchor="middle" font-family="serif" font-size="52" font-weight="700" fill="#fff">✦</text>
+  </g>
+
+  <!-- Title -->
+  <text
+    x="600"
+    y="500"
+    text-anchor="middle"
+    font-family="'Cinzel', serif"
+    font-size="72"
+    font-weight="700"
+    fill="url(#titleGrad)"
+    letter-spacing="2"
+  >Legendary</text>
+  <text
+    x="600"
+    y="580"
+    text-anchor="middle"
+    font-family="'Cinzel', serif"
+    font-size="72"
+    font-weight="700"
+    fill="#9349CC"
+    letter-spacing="2"
+    filter="url(#softGlow)"
+  >Mystic Forge</text>
+
+  <!-- thin decorative divider -->
+  <g opacity="0.6">
+    <line x1="430" y1="612" x2="770" y2="612" stroke="#9349CC" stroke-width="1"></line>
+    <circle cx="600" cy="612" r="3" fill="#e9c66b"></circle>
+  </g>
+</svg>
