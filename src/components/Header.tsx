@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { useTranslation } from "react-i18next"
 
 import { cn } from "@/lib/utils"
@@ -14,7 +15,9 @@ export function Header() {
 
   return (
     <header className="flex items-center justify-between gap-6 pt-7">
-      <Wordmark />
+      <Link to="/">
+        <Wordmark />
+      </Link>
       <div className="flex gap-0.5 p-[3px] border border-line rounded-full">
         <button
           onClick={() => i18n.changeLanguage("de")}

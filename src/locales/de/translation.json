@@ -1,13 +1,42 @@
 {
   "common": {
     "kicker": "Guild Wars 2 · Tools",
-    "heroTitle": "Kleine Tools für Leute, die es genau wissen wollen.",
-    "heroText": "breakbar.cc sammelt, was beim Spielen von Guild Wars 2 wirklich hilft: Rechner, Log-Auswertung, Rezepte, Erklärungen. Alles kostenlos, alles ohne Account-Zwang.",
+    "heroTitle": "Kleine Tools für Guild-Wars-2-Spieler, die es genau wissen wollen.",
+    "heroText": "breakbar.cc ist eine Sammlung von Tools rund um Guild Wars 2: Rechner, Log-Auswertung, Rezepte, Erklärungen — alles, was beim Zocken wirklich hilft. Kostenlos und ohne Account-Zwang.",
     "gridLabel": "Alle Tools",
     "soonLabel": "bald",
     "openLabel": "öffnen →",
     "inProgressLabel": "in Arbeit",
-    "footerLeft": "Kein offizielles Guild-Wars-2-Angebot. Fanprojekt, gebaut aus Eigenbedarf."
+    "footerLeft": "Kein offizielles Guild-Wars-2-Angebot. Fanprojekt, gebaut aus Eigenbedarf.",
+    "footerImpressum": "Impressum",
+    "footerDatenschutz": "Datenschutz",
+    "backHome": "← zurück zur Startseite",
+    "notFound": "Diese Seite gibt es nicht."
+  },
+  "legal": {
+    "impressum": {
+      "title": "Impressum",
+      "subtitle": "Angaben gemäß § 5 DDG",
+      "sectionContact": "Kontakt",
+      "labelEmail": "E-Mail",
+      "labelSecondaryContact": "Weitere Kontaktmöglichkeit",
+      "sectionResponsible": "Verantwortlich für den Inhalt gemäß § 18 Abs. 2 MStV",
+      "responsibleText": "Verantwortlich im Sinne des § 18 Abs. 2 MStV ist die oben genannte Person.",
+      "sectionDisclaimer": "Haftungshinweis",
+      "disclaimerText": "breakbar.cc ist ein privates Fanprojekt und steht in keiner Verbindung zu ArenaNet oder NCSOFT. Guild Wars 2 und alle zugehörigen Logos und Markenzeichen sind Eigentum von ArenaNet, LLC. Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer, verlinkter Seiten (Tools auf den jeweiligen Subdomains, externe Wikis o. Ä.) — für deren Inhalte sind ausschließlich deren Betreiber verantwortlich."
+    },
+    "datenschutz": {
+      "title": "Datenschutzerklärung",
+      "intro": "Diese Datenschutzerklärung gilt für breakbar.cc. Für die Tools auf den einzelnen Subdomains (z. B. fractal.breakbar.cc, legendary.breakbar.cc, voidlog.breakbar.cc) gelten deren eigene, separate Datenschutzerklärungen.",
+      "sectionResponsible": "Verantwortlicher",
+      "responsibleText": "Verantwortlich für die Datenverarbeitung auf dieser Website im Sinne der DSGVO ist die im Impressum genannte Person.",
+      "sectionHosting": "Hosting",
+      "hostingText": "Diese Website wird bei folgendem Anbieter gehostet, der dabei automatisch technisch notwendige Server-Log-Daten (u. a. IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene Seite, verwendeter Browser) verarbeitet:",
+      "sectionCookies": "Cookies und Tracking",
+      "cookiesText": "Diese Website setzt aktuell keine Analyse- oder Tracking-Cookies ein. Es wird lediglich die Spracheinstellung (Deutsch/Englisch) technisch notwendig im Browser gespeichert.",
+      "sectionRights": "Ihre Rechte",
+      "rightsText": "Sie haben jederzeit das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer personenbezogenen Daten sowie ein Beschwerderecht bei einer Datenschutz-Aufsichtsbehörde. Bei Fragen wenden Sie sich an die im Impressum genannte Kontaktadresse."
+    }
   },
   "tools": {
     "fractal": {

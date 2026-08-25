@@ -32,6 +32,17 @@ npm run dev
 - `src/data/tools.ts` — Tool-Registry (Name, Link, `soon`-Flag). Neue Tools werden hier als Eintrag ergänzt; Übersetzungen für Beschreibung/Screenshot-Label kommen dazu unter `tools.<key>.desc`/`tools.<key>.shot` in die Locale-Dateien.
 - `src/locales/en/translation.json`, `src/locales/de/translation.json` — alle UI-Texte (i18next). Default-Sprache ist Englisch (`src/lib/i18n.ts`).
 - `src/components/` — Header, Hero, ToolGrid/ToolCard, Footer.
+- `src/pages/` — Home, Impressum, Datenschutz, NotFound (Routing über `react-router-dom`, siehe `src/App.tsx`).
+- `src/data/legalInfo.ts` — Name/Anschrift/Kontakt/Hosting-Anbieter für Impressum & Datenschutzerklärung. **Enthält noch `TODO:`-Platzhalter, vor dem Go-Live ausfüllen.**
+
+## Rechtstexte (Impressum & Datenschutz)
+
+- Erreichbar unter `/impressum` und `/datenschutz`, aus dem Footer heraus auf **jeder** Seite verlinkt (1 Klick, erfüllt die Zwei-Klick-Regel nach § 5 DDG).
+- Die drei Tool-Subdomains (Voidlog, Fractal-Rechner, Legendary Mystic Forge) haben absichtlich **keine eigenen** Impressum/Datenschutz-Seiten, sondern sollen in ihrem jeweiligen Footer direkt auf `https://breakbar.cc/impressum` bzw. `/datenschutz` verlinken — Details siehe Chat-Verlauf/Plan.
+- Vor dem Deploy offen:
+  - `src/data/legalInfo.ts` mit echten Daten füllen (Name, Anschrift, E-Mail, zweite Kontaktmöglichkeit, Hosting-Anbieter).
+  - Hosting-Provider für breakbar.cc muss client-seitiges Routing unterstützen (SPA-Fallback auf `index.html` für alle Pfade), sonst liefert ein direkter Aufruf von `/impressum` einen 404 vom Server.
+  - Texte sind fachlich sorgfältig recherchiert, aber keine Rechtsberatung — vor Go-Live gegenprüfen (z. B. eRecht24-Generator oder Anwalt).
 
 ## Später
 
