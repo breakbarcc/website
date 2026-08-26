@@ -11,9 +11,9 @@ export const legalInfo = {
   street: import.meta.env.VITE_LEGAL_STREET ?? "TODO: Straße Hausnummer",
   city: import.meta.env.VITE_LEGAL_CITY ?? "TODO: PLZ Ort",
   email: import.meta.env.VITE_LEGAL_EMAIL ?? "TODO: kontakt@breakbar.cc",
+  /** Discord invite URL, e.g. "https://discord.gg/xxxxxxx" — rendered as a clickable link. */
   secondaryContact:
-    import.meta.env.VITE_LEGAL_SECONDARY_CONTACT ??
-    "TODO: Telefonnummer oder Hinweis auf Kontaktformular",
+    import.meta.env.VITE_LEGAL_SECONDARY_CONTACT ?? "TODO: https://discord.gg/xxxxxxx",
   hostingProvider:
     import.meta.env.VITE_LEGAL_HOSTING_PROVIDER ??
     "TODO: Name und Anschrift des Hosting-Anbieters",
