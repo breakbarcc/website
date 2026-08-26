@@ -33,7 +33,9 @@
       "sectionHosting": "Hosting",
       "hostingText": "Diese Website wird bei folgendem Anbieter gehostet, der dabei automatisch technisch notwendige Server-Log-Daten (u. a. IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene Seite, verwendeter Browser) verarbeitet:",
       "sectionCookies": "Cookies und Tracking",
-      "cookiesText": "Diese Website setzt aktuell keine Analyse- oder Tracking-Cookies ein. Es wird lediglich die Spracheinstellung (Deutsch/Englisch) technisch notwendig im Browser gespeichert.",
+      "cookiesText": "Diese Website setzt keine Tracking- oder Analyse-Cookies ein. Es wird lediglich die Spracheinstellung (Deutsch/Englisch) technisch notwendig im Browser gespeichert.",
+      "sectionAnalytics": "Reichweitenmessung",
+      "analyticsText": "Zur Analyse der Seitenaufrufe wird Vercel Web Analytics eingesetzt. Der Dienst arbeitet cookielos und speichert keine personenbezogenen oder geräteübergreifend wiedererkennbaren Kennungen; erfasst werden ausschließlich anonymisierte, aggregierte Statistiken (z. B. Anzahl Seitenaufrufe, aufgerufene URL, Referrer, grobe Geräte-/Browserkategorie). Eine Zusammenführung mit anderen Daten oder eine Profilbildung findet nicht statt. Anbieter: Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, USA. Weitere Informationen: https://vercel.com/docs/analytics/privacy-policy",
       "sectionRights": "Ihre Rechte",
       "rightsText": "Sie haben jederzeit das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer personenbezogenen Daten sowie ein Beschwerderecht bei einer Datenschutz-Aufsichtsbehörde. Bei Fragen wenden Sie sich an die im Impressum genannte Kontaktadresse."
     }
