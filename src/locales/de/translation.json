@@ -1,13 +1,13 @@
 {
   "common": {
     "kicker": "Guild Wars 2 · Tools",
-    "heroTitle": "Kleine Tools für Guild-Wars-2-Spieler, die es genau wissen wollen.",
-    "heroText": "breakbar.cc ist eine Sammlung von Tools rund um Guild Wars 2: alles, was hilft dein nächstes Ziel zu erreichen",
+    "heroTitle": "Guild Wars 2 Tools für Gamer, die es genau wissen wollen.",
+    "heroText": "breakbar.cc ist eine Sammlung von Tools rund um Guild Wars 2: alles, was hilft dein nächstes Ziel zu erreichen. All diese Tools werden von engagierten GW2-Spielern entwickelt und gepflegt, und wir würden uns sehr über euer Feedback freuen.",
     "gridLabel": "Alle Tools",
     "soonLabel": "bald",
     "openLabel": "öffnen →",
     "inProgressLabel": "in Arbeit",
-    "footerLeft": "Kein offizielles Guild-Wars-2-Angebot. Fanprojekt, gebaut aus Eigenbedarf.",
+    "footerLeft": "Kein offizielles Guild Wars 2 Angebot. Fanprojekt, gebaut aus Eigenbedarf.",
     "footerImpressum": "Impressum",
     "footerDatenschutz": "Datenschutz",
     "backHome": "← zurück zur Startseite",
@@ -48,7 +48,7 @@
       "shot": "Screenshot: Rezeptbaum"
     },
     "voidlog": {
-      "desc": "Ladet eure Logs hoch und seht auf einen Blick, wie weit die Gruppe im Encounter kommt und ob sich der Trend bewegt.",
+      "desc": "Harvest Tempel CM Log-Analyse Seite. Verfolge, wie sich dein Trupp im Training verbessert und überprüfe Spielmechaniken und Ausrutscher",
       "shot": "Screenshot: Projektübersicht"
     }
   }

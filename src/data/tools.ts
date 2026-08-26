@@ -14,7 +14,7 @@ export const tools: Tool[] = [
     {
         key: 'fractal',
         href: 'https://fractal.breakbar.cc/',
-        name: 'Fractal God Rechner',
+        name: 'Fractal God Calculator',
         image: fractalPreview,
     },
     {

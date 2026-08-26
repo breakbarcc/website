@@ -1,8 +1,8 @@
 {
   "common": {
     "kicker": "Guild Wars 2 · tools",
-    "heroTitle": "Small tools for Guild Wars 2 players who want to know exactly.",
-    "heroText": "breakbar.cc is a collection of tools built around Guild Wars 2 — the stuff that actually helps you with your next goal.",
+    "heroTitle": "Guild Wars 2 tools for players who want to know exactly.",
+    "heroText": "breakbar.cc is a collection of tools built around Guild Wars 2 — the stuff that actually helps you with your next goal. All tools are build and maintained by dedicated GW2 players and we'd love to hear your feedback",
     "gridLabel": "All tools",
     "soonLabel": "soon",
     "openLabel": "open →",
@@ -48,7 +48,7 @@
       "shot": "Screenshot: recipe tree"
     },
     "voidlog": {
-      "desc": "Upload your logs and see at a glance how far the group gets in an encounter and whether the trend is moving.",
+      "desc": "Harvest Temple CM Log Analysis Page. Track how your squad is improving in training and review mechanics and mistakes ",
       "shot": "Screenshot: project overview"
     }
   }
