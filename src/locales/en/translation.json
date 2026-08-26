@@ -23,7 +23,9 @@
       "sectionResponsible": "Person responsible for content per § 18 (2) MStV",
       "responsibleText": "The person named above is responsible for content per § 18 (2) MStV (German Interstate Media Treaty).",
       "sectionDisclaimer": "Disclaimer",
-      "disclaimerText": "breakbar.cc is a private fan project and is not affiliated with ArenaNet or NCSOFT. Guild Wars 2 and all associated logos and trademarks are property of ArenaNet, LLC. Despite careful content control, we assume no liability for the content of external linked sites (the tools on their respective subdomains, external wikis, etc.) — their respective operators are solely responsible for their content."
+      "disclaimerText": "breakbar.cc is a private fan project and is not affiliated with ArenaNet or NCSOFT. Guild Wars 2 and all associated logos and trademarks are property of ArenaNet, LLC. Despite careful content control, we assume no liability for the content of external linked sites (the tools on their respective subdomains, external wikis, etc.) — their respective operators are solely responsible for their content.",
+      "sectionDisputeResolution": "Consumer dispute resolution",
+      "disputeResolutionText": "We are not willing and not obligated to participate in dispute resolution proceedings before a consumer arbitration board."
     },
     "datenschutz": {
       "title": "Privacy policy",

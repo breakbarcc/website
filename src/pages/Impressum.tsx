@@ -33,6 +33,10 @@ export function Impressum() {
       <LegalSection heading={t("legal.impressum.sectionDisclaimer")}>
         <p>{t("legal.impressum.disclaimerText")}</p>
       </LegalSection>
+
+      <LegalSection heading={t("legal.impressum.sectionDisputeResolution")}>
+        <p>{t("legal.impressum.disputeResolutionText")}</p>
+      </LegalSection>
     </LegalPage>
   )
 }
