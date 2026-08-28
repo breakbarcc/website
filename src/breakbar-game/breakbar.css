@@ -1,0 +1,310 @@
+/*
+ * Styles for the breakbar minigame. Uses the host site's CSS custom
+ * properties (breakbar.cc's own theme tokens) with sane fallbacks so this
+ * also renders correctly when opened standalone via test.html.
+ */
+
+.bb-root {
+  --bb-base: var(--color-base, #0d0f12);
+  --bb-surface: var(--color-surface, #111418);
+  --bb-line: var(--color-line, #1c2026);
+  --bb-line-hover: var(--color-line-hover, #39424b);
+  --bb-signal: var(--color-signal, #5fe3d0);
+  --bb-signal-hover: var(--color-signal-hover, #8af0e2);
+  --bb-warn: var(--color-warn, #e0b062);
+  --bb-danger: var(--color-destructive, #e5484d);
+  --bb-text: var(--color-text, #f2f5f9);
+  --bb-text-muted: var(--color-text-muted, #98a0ab);
+  --bb-text-faint: var(--color-text-faint, #6b737e);
+
+  font-family: var(--font-mono, ui-monospace, monospace);
+  margin: 2.5rem 0;
+}
+
+.bb-trigger {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0.5rem 0;
+  margin: 0;
+  cursor: pointer;
+  color: var(--bb-text-faint);
+}
+
+.bb-trigger-line {
+  flex: 1;
+  height: 1px;
+  background: var(--bb-line);
+  transition: background-color 0.15s ease;
+}
+
+.bb-trigger-label {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: color 0.15s ease;
+}
+
+.bb-trigger:hover .bb-trigger-line,
+.bb-trigger:focus-visible .bb-trigger-line {
+  background: var(--bb-signal);
+}
+
+.bb-trigger:hover .bb-trigger-label,
+.bb-trigger:focus-visible .bb-trigger-label {
+  color: var(--bb-signal);
+}
+
+.bb-trigger:focus-visible {
+  outline: 2px solid var(--bb-signal);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.bb-panel {
+  margin-top: 1rem;
+  padding: 1.5rem;
+  border: 1px solid var(--bb-line);
+  border-radius: 10px;
+  background: var(--bb-surface);
+}
+
+.bb-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.bb-header-info {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
+.bb-profession {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--bb-signal);
+}
+
+.bb-timer {
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  color: var(--bb-text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.bb-close {
+  font-family: inherit;
+  background: none;
+  border: 1px solid var(--bb-line);
+  border-radius: 999px;
+  color: var(--bb-text-faint);
+  font-size: 11px;
+  padding: 0.25rem 0.6rem;
+  cursor: pointer;
+}
+
+.bb-close:hover {
+  color: var(--bb-text);
+  border-color: var(--bb-line-hover);
+}
+
+.bb-bar-track {
+  position: relative;
+  height: 28px;
+  border-radius: 6px;
+  background: var(--bb-base);
+  border: 1px solid var(--bb-line);
+  overflow: hidden;
+  margin-bottom: 1.25rem;
+}
+
+.bb-bar-fill {
+  position: absolute;
+  inset: 0;
+  transform-origin: left center;
+  background: linear-gradient(90deg, var(--bb-signal), var(--bb-warn));
+  transition: transform 0.12s linear;
+}
+
+.bb-reduced-motion .bb-bar-fill {
+  transition: none;
+}
+
+.bb-bar-label {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--bb-text);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.bb-skills {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.bb-skill {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.6rem 0.3rem 0.5rem;
+  background: var(--bb-base);
+  border: 1px solid var(--bb-line);
+  border-radius: 8px;
+  color: var(--bb-text);
+  cursor: pointer;
+  font-family: inherit;
+  transition: border-color 0.15s ease, transform 0.1s ease;
+}
+
+.bb-skill:hover:not(:disabled) {
+  border-color: var(--bb-signal);
+}
+
+.bb-skill:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+.bb-skill.is-active {
+  border-color: var(--bb-warn);
+  box-shadow: inset 0 0 0 1px var(--bb-warn);
+}
+
+.bb-reduced-motion .bb-skill {
+  transition: none;
+}
+
+.bb-skill:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.bb-skill-dot-badge {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  font-size: 9px;
+  line-height: 1;
+  color: var(--bb-warn);
+}
+
+.bb-skill-key {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  font-size: 9px;
+  color: var(--bb-text-faint);
+  background: var(--bb-surface);
+  border: 1px solid var(--bb-line);
+  border-radius: 4px;
+  width: 14px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.bb-skill-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  border: 1px solid var(--bb-line);
+  object-fit: cover;
+}
+
+.bb-skill--no-icon .bb-skill-name {
+  font-size: 12px;
+}
+
+.bb-skill-name {
+  font-size: 10px;
+  text-align: center;
+  line-height: 1.2;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.bb-skill-cd {
+  font-size: 11px;
+  color: var(--bb-warn);
+  min-height: 1em;
+  font-variant-numeric: tabular-nums;
+}
+
+.bb-status {
+  text-align: center;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--bb-line);
+}
+
+.bb-status-text {
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.bb-panel.is-success .bb-status-text {
+  color: var(--bb-signal);
+}
+
+.bb-panel.is-fail .bb-status-text {
+  color: var(--bb-danger);
+}
+
+.bb-again {
+  font-family: inherit;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  padding: 0.5rem 1.25rem;
+  border-radius: 999px;
+  border: 1px solid var(--bb-signal);
+  background: transparent;
+  color: var(--bb-signal);
+  cursor: pointer;
+}
+
+.bb-again:hover {
+  background: var(--bb-signal);
+  color: var(--bb-base);
+}
+
+@media (max-width: 640px) {
+  .bb-skills {
+    gap: 0.35rem;
+  }
+
+  .bb-skill {
+    padding: 0.5rem 0.2rem;
+  }
+
+  .bb-skill-icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .bb-skill-name {
+    font-size: 8.5px;
+  }
+}

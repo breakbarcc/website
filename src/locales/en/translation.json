@@ -1,8 +1,8 @@
 {
   "common": {
     "kicker": "Guild Wars 2 · tools",
-    "heroTitle": "Small tools for Guild Wars 2 players who want to know exactly.",
-    "heroText": "breakbar.cc is a collection of tools built around Guild Wars 2 — the stuff that actually helps you with your next goal.",
+    "heroTitle": "Guild Wars 2 tools for players who want to know exactly.",
+    "heroText": "breakbar.cc is a collection of tools built around Guild Wars 2 — the stuff that actually helps you with your next goal. All tools are build and maintained by dedicated GW2 players and we'd love to hear your feedback",
     "gridLabel": "All tools",
     "soonLabel": "soon",
     "openLabel": "open →",
@@ -23,7 +23,9 @@
       "sectionResponsible": "Person responsible for content per § 18 (2) MStV",
       "responsibleText": "The person named above is responsible for content per § 18 (2) MStV (German Interstate Media Treaty).",
       "sectionDisclaimer": "Disclaimer",
-      "disclaimerText": "breakbar.cc is a private fan project and is not affiliated with ArenaNet or NCSOFT. Guild Wars 2 and all associated logos and trademarks are property of ArenaNet, LLC. Despite careful content control, we assume no liability for the content of external linked sites (the tools on their respective subdomains, external wikis, etc.) — their respective operators are solely responsible for their content."
+      "disclaimerText": "breakbar.cc is a private fan project and is not affiliated with ArenaNet or NCSOFT. Guild Wars 2 and all associated logos and trademarks are property of ArenaNet, LLC. Despite careful content control, we assume no liability for the content of external linked sites (the tools on their respective subdomains, external wikis, etc.) — their respective operators are solely responsible for their content.",
+      "sectionDisputeResolution": "Consumer dispute resolution",
+      "disputeResolutionText": "We are not willing and not obligated to participate in dispute resolution proceedings before a consumer arbitration board."
     },
     "datenschutz": {
       "title": "Privacy policy",
@@ -33,7 +35,9 @@
       "sectionHosting": "Hosting",
       "hostingText": "This website is hosted by the following provider, which automatically processes technically necessary server log data (including IP address, date and time of access, page requested, browser used):",
       "sectionCookies": "Cookies and tracking",
-      "cookiesText": "This website currently does not use any analytics or tracking cookies. Only the language setting (German/English) is stored technically in the browser.",
+      "cookiesText": "This website does not use any tracking or analytics cookies. Only the language setting (German/English) is stored technically in the browser.",
+      "sectionAnalytics": "Web analytics",
+      "analyticsText": "This website uses Vercel Web Analytics to analyze page views. The service is cookieless and does not store any personally identifiable or cross-device identifiers; it only collects anonymized, aggregated statistics (e.g. number of page views, page URL, referrer, coarse device/browser category). Data is not combined with other data sources, and no user profiles are created. Provider: Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, USA. More information: https://vercel.com/docs/analytics/privacy-policy",
       "sectionRights": "Your rights",
       "rightsText": "You have the right at any time to access, rectify, erase, and restrict the processing of your personal data, as well as the right to lodge a complaint with a data protection supervisory authority. For questions, please contact the address listed in the legal notice."
     }
@@ -48,7 +52,7 @@
       "shot": "Screenshot: recipe tree"
     },
     "voidlog": {
-      "desc": "Upload your logs and see at a glance how far the group gets in an encounter and whether the trend is moving.",
+      "desc": "Harvest Temple CM Log Analysis Page. Track how your squad is improving in training and review mechanics and mistakes ",
       "shot": "Screenshot: project overview"
     }
   }

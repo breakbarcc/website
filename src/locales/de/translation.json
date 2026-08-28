@@ -1,13 +1,13 @@
 {
   "common": {
     "kicker": "Guild Wars 2 · Tools",
-    "heroTitle": "Kleine Tools für Guild-Wars-2-Spieler, die es genau wissen wollen.",
-    "heroText": "breakbar.cc ist eine Sammlung von Tools rund um Guild Wars 2: alles, was hilft dein nächstes Ziel zu erreichen",
+    "heroTitle": "Guild Wars 2 Tools für Gamer, die es genau wissen wollen.",
+    "heroText": "breakbar.cc ist eine Sammlung von Tools rund um Guild Wars 2: alles, was hilft dein nächstes Ziel zu erreichen. All diese Tools werden von engagierten GW2-Spielern entwickelt und gepflegt, und wir würden uns sehr über euer Feedback freuen.",
     "gridLabel": "Alle Tools",
     "soonLabel": "bald",
     "openLabel": "öffnen →",
     "inProgressLabel": "in Arbeit",
-    "footerLeft": "Kein offizielles Guild-Wars-2-Angebot. Fanprojekt, gebaut aus Eigenbedarf.",
+    "footerLeft": "Kein offizielles Guild Wars 2 Angebot. Fanprojekt, gebaut aus Eigenbedarf.",
     "footerImpressum": "Impressum",
     "footerDatenschutz": "Datenschutz",
     "backHome": "← zurück zur Startseite",
@@ -23,7 +23,9 @@
       "sectionResponsible": "Verantwortlich für den Inhalt gemäß § 18 Abs. 2 MStV",
       "responsibleText": "Verantwortlich im Sinne des § 18 Abs. 2 MStV ist die oben genannte Person.",
       "sectionDisclaimer": "Haftungshinweis",
-      "disclaimerText": "breakbar.cc ist ein privates Fanprojekt und steht in keiner Verbindung zu ArenaNet oder NCSOFT. Guild Wars 2 und alle zugehörigen Logos und Markenzeichen sind Eigentum von ArenaNet, LLC. Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer, verlinkter Seiten (Tools auf den jeweiligen Subdomains, externe Wikis o. Ä.) — für deren Inhalte sind ausschließlich deren Betreiber verantwortlich."
+      "disclaimerText": "breakbar.cc ist ein privates Fanprojekt und steht in keiner Verbindung zu ArenaNet oder NCSOFT. Guild Wars 2 und alle zugehörigen Logos und Markenzeichen sind Eigentum von ArenaNet, LLC. Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer, verlinkter Seiten (Tools auf den jeweiligen Subdomains, externe Wikis o. Ä.) — für deren Inhalte sind ausschließlich deren Betreiber verantwortlich.",
+      "sectionDisputeResolution": "Verbraucherstreitschlichtung",
+      "disputeResolutionText": "Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen."
     },
     "datenschutz": {
       "title": "Datenschutzerklärung",
@@ -33,7 +35,9 @@
       "sectionHosting": "Hosting",
       "hostingText": "Diese Website wird bei folgendem Anbieter gehostet, der dabei automatisch technisch notwendige Server-Log-Daten (u. a. IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene Seite, verwendeter Browser) verarbeitet:",
       "sectionCookies": "Cookies und Tracking",
-      "cookiesText": "Diese Website setzt aktuell keine Analyse- oder Tracking-Cookies ein. Es wird lediglich die Spracheinstellung (Deutsch/Englisch) technisch notwendig im Browser gespeichert.",
+      "cookiesText": "Diese Website setzt keine Tracking- oder Analyse-Cookies ein. Es wird lediglich die Spracheinstellung (Deutsch/Englisch) technisch notwendig im Browser gespeichert.",
+      "sectionAnalytics": "Reichweitenmessung",
+      "analyticsText": "Zur Analyse der Seitenaufrufe wird Vercel Web Analytics eingesetzt. Der Dienst arbeitet cookielos und speichert keine personenbezogenen oder geräteübergreifend wiedererkennbaren Kennungen; erfasst werden ausschließlich anonymisierte, aggregierte Statistiken (z. B. Anzahl Seitenaufrufe, aufgerufene URL, Referrer, grobe Geräte-/Browserkategorie). Eine Zusammenführung mit anderen Daten oder eine Profilbildung findet nicht statt. Anbieter: Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, USA. Weitere Informationen: https://vercel.com/docs/analytics/privacy-policy",
       "sectionRights": "Ihre Rechte",
       "rightsText": "Sie haben jederzeit das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer personenbezogenen Daten sowie ein Beschwerderecht bei einer Datenschutz-Aufsichtsbehörde. Bei Fragen wenden Sie sich an die im Impressum genannte Kontaktadresse."
     }
@@ -48,7 +52,7 @@
       "shot": "Screenshot: Rezeptbaum"
     },
     "voidlog": {
-      "desc": "Ladet eure Logs hoch und seht auf einen Blick, wie weit die Gruppe im Encounter kommt und ob sich der Trend bewegt.",
+      "desc": "Harvest Tempel CM Log-Analyse Seite. Verfolge, wie sich dein Trupp im Training verbessert und überprüfe Spielmechaniken und Ausrutscher",
       "shot": "Screenshot: Projektübersicht"
     }
   }

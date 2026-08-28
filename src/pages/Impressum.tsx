@@ -22,7 +22,15 @@ export function Impressum() {
           {t("legal.impressum.labelEmail")}: {legalInfo.email}
         </p>
         <p>
-          {t("legal.impressum.labelSecondaryContact")}: {legalInfo.secondaryContact}
+          {t("legal.impressum.labelSecondaryContact")}:{" "}
+          <a
+            href={legalInfo.secondaryContact}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-signal hover:text-signal-hover underline"
+          >
+            Discord
+          </a>
         </p>
       </LegalSection>
 
@@ -32,6 +40,10 @@ export function Impressum() {
 
       <LegalSection heading={t("legal.impressum.sectionDisclaimer")}>
         <p>{t("legal.impressum.disclaimerText")}</p>
+      </LegalSection>
+
+      <LegalSection heading={t("legal.impressum.sectionDisputeResolution")}>
+        <p>{t("legal.impressum.disputeResolutionText")}</p>
       </LegalSection>
     </LegalPage>
   )

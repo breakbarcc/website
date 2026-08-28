@@ -27,6 +27,10 @@ export function Datenschutz() {
         <p>{t("legal.datenschutz.cookiesText")}</p>
       </LegalSection>
 
+      <LegalSection heading={t("legal.datenschutz.sectionAnalytics")}>
+        <p>{t("legal.datenschutz.analyticsText")}</p>
+      </LegalSection>
+
       <LegalSection heading={t("legal.datenschutz.sectionRights")}>
         <p>{t("legal.datenschutz.rightsText")}</p>
       </LegalSection>
