@@ -1,11 +1,17 @@
 /**
  * Breakbar minigame — a GW2-style defiance bar easter egg.
  *
- * Vanilla JS, no dependencies, no build step. Import this file as an ES
- * module (in a bundler or directly via <script type="module">) and call
- * `init(rootElement)`. It renders its own trigger + game UI into the given
- * element and returns `{ destroy }` to tear everything down again.
+ * Vanilla JS, no build step. Import this file as an ES module (in a bundler
+ * or directly via <script type="module">) and call `init(rootElement)`. It
+ * renders its own trigger + game UI into the given element and returns
+ * `{ destroy }` to tear everything down again.
+ *
+ * The only external dependency is canvas-confetti (bare specifier — resolved
+ * by the bundler in the site build; standalone use via test.html resolves it
+ * through an import map instead, so this still needs no build step there).
  */
+
+import confetti from "canvas-confetti"
 
 import { PROFESSIONS } from "./skills-data.js"
 
@@ -163,6 +169,7 @@ export function init(rootElement) {
   let state = null
   let skillButtons = []
   let pendingActivations = []
+  let confettiFired = false
   let open = false
   let rafId = null
   let accumulator = 0
@@ -220,6 +227,30 @@ export function init(rootElement) {
     pendingActivations.push(index)
   }
 
+  function fireConfetti() {
+    if (reducedMotion) return
+
+    const styles = getComputedStyle(rootElement)
+    const readColor = (name, fallback) => styles.getPropertyValue(name).trim() || fallback
+    const rect = panel.getBoundingClientRect()
+
+    confetti({
+      particleCount: 120,
+      spread: 90,
+      startVelocity: 45,
+      origin: {
+        x: (rect.left + rect.width / 2) / window.innerWidth,
+        y: (rect.top + rect.height / 2) / window.innerHeight,
+      },
+      colors: [
+        readColor("--bb-signal", "#5fe3d0"),
+        readColor("--bb-signal-hover", "#8af0e2"),
+        readColor("--bb-warn", "#e0b062"),
+        readColor("--bb-text", "#f2f5f9"),
+      ],
+    })
+  }
+
   function render() {
     const pct = state.barCurrent / CONFIG.bar.max
     barFill.style.transform = `scaleX(${pct})`
@@ -251,6 +282,11 @@ export function init(rootElement) {
     panel.classList.toggle("is-fail", state.status === "fail")
     statusTextEl.textContent =
       state.status === "success" ? "DEFIANCE BAR BROKEN" : state.status === "fail" ? "BAR NOT BROKEN IN TIME" : ""
+
+    if (state.status === "success" && !confettiFired) {
+      confettiFired = true
+      fireConfetti()
+    }
   }
 
   function loop(now) {
@@ -290,6 +326,7 @@ export function init(rootElement) {
     state = createInitialState(skills)
     state.status = "running"
     pendingActivations = []
+    confettiFired = false
     render()
     startLoop()
   }
