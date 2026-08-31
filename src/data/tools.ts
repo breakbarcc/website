@@ -28,7 +28,6 @@ export const tools: Tool[] = [
         href: 'https://voidlog.breakbar.cc/',
         name: 'Voidlog',
         image: voidlogPreview,
-        soon: true,
     },
     // {
     //   key: "raids",
