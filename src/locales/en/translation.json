@@ -54,6 +54,10 @@
     "voidlog": {
       "desc": "Harvest Temple CM Log Analysis Page. Track how your squad is improving in training and review mechanics and mistakes ",
       "shot": "Screenshot: project overview"
+    },
+    "launcher": {
+      "desc": "Start several Guild Wars 2 clients at once, each with its own account. One small portable .exe, free and open source.",
+      "shot": "Screenshot: account list"
     }
   }
 }

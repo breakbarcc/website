@@ -1,6 +1,7 @@
 import fractalPreview from '@/assets/banner_fractal_calculator.svg'
 import voidlogPreview from '@/assets/banner_voidlog.svg'
 import mysticForgePreview from '@/assets/banner_legendary_mystic_forge.svg'
+import launcherPreview from '@/assets/banner_launcher.svg'
 
 export interface Tool {
     key: string
@@ -28,6 +29,12 @@ export const tools: Tool[] = [
         href: 'https://voidlog.breakbar.cc/',
         name: 'Voidlog',
         image: voidlogPreview,
+    },
+    {
+        key: 'launcher',
+        href: 'https://launcher.breakbar.cc/',
+        name: 'Breakbar Launcher',
+        image: launcherPreview,
     },
     // {
     //   key: "raids",

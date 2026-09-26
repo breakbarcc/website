@@ -54,6 +54,10 @@
     "voidlog": {
       "desc": "Harvest Tempel CM Log-Analyse Seite. Verfolge, wie sich dein Trupp im Training verbessert und überprüfe Spielmechaniken und Ausrutscher",
       "shot": "Screenshot: Projektübersicht"
+    },
+    "launcher": {
+      "desc": "Starte mehrere Guild-Wars-2-Clients gleichzeitig, jeder mit eigenem Account. Eine kleine portable .exe, kostenlos und Open Source.",
+      "shot": "Screenshot: Account-Liste"
     }
   }
 }
