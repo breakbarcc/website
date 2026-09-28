@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://breakbar.cc/sitemap.xml
+Sitemap: https://www.breakbar.cc/sitemap.xml
