@@ -1,4 +1,16 @@
 {
+  "seo": {
+    "home": {
+      "title": "Guild Wars 2 Tools: Fractal God Rechner, Mystic Forge, Log-Analyse & Multi Launcher | breakbar.cc",
+      "description": "Kostenlose Tools für Guild Wars 2: Fractal-God-Rechner, Legendary-Mystic-Forge-Planer, Voidlog Log-Analyse und Multi Launcher – von GW2-Spielern für GW2-Spieler."
+    },
+    "impressum": {
+      "title": "Impressum | breakbar.cc"
+    },
+    "datenschutz": {
+      "title": "Datenschutz | breakbar.cc"
+    }
+  },
   "common": {
     "kicker": "Guild Wars 2 · Tools",
     "heroTitle": "Guild Wars 2 Tools für Gamer, die es genau wissen wollen.",

@@ -2,9 +2,17 @@ import { useTranslation } from "react-i18next"
 
 import { legalInfo } from "@/data/legalInfo"
 import { LegalPage, LegalSection } from "@/components/LegalPage"
+import { useSeo } from "@/lib/useSeo"
 
 export function Impressum() {
   const { t } = useTranslation()
+
+  useSeo({
+    title: t("seo.impressum.title"),
+    description: t("legal.impressum.subtitle"),
+    path: "/impressum",
+    noindex: true,
+  })
 
   return (
     <LegalPage title={t("legal.impressum.title")}>
