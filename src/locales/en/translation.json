@@ -38,6 +38,8 @@
       "cookiesText": "This website does not use any tracking or analytics cookies. Only the language setting (German/English) is stored technically in the browser.",
       "sectionAnalytics": "Web analytics",
       "analyticsText": "This website uses Vercel Web Analytics to analyze page views. The service is cookieless and does not store any personally identifiable or cross-device identifiers; it only collects anonymized, aggregated statistics (e.g. number of page views, page URL, referrer, coarse device/browser category). Data is not combined with other data sources, and no user profiles are created. Provider: Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, USA. More information: https://vercel.com/docs/analytics/privacy-policy",
+      "sectionAi": "AI-generated content",
+      "aiText": "Some illustrations, icons and other content on this website and in the program were created with AI assistance. None of it depicts real people, places or events.",
       "sectionRights": "Your rights",
       "rightsText": "You have the right at any time to access, rectify, erase, and restrict the processing of your personal data, as well as the right to lodge a complaint with a data protection supervisory authority. For questions, please contact the address listed in the legal notice."
     }
